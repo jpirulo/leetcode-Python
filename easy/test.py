@@ -1,3 +1,28 @@
-x = 999999999  # 1000 en binario
-x >>= 1  # Desplaza los bits a la derecha 1 vez
-print(x)  # 4
+import yfinance as yf
+import datetime as dt
+
+start = dt.datetime(2020,1,1)
+end = dt.datetime.now()
+
+eth = yf.download('ETH', start, end)
+
+
+
+#!pip install pandas_datareader
+import pandas_datareader as web
+import datetime as dt
+
+start = dt.datetime(2020,1,1)
+end = dt.datetime.now()
+
+ltc = web.DataReader('LTC-USD', 'yahoo', start, end)
+
+
+
+
+
+
+#Source: https://stackoverflow.com/questions/71023401
+
+
+
